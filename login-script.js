@@ -30,7 +30,7 @@ if (name === '' || phoneNumber === '') {
   });
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzIL-2wjRZpaclCWaIEXPAO-bGQZjsJtB7lS1YKidClV_SxnkYrnA85KIbqPpteZcA/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwrFR5bjrxaOIPWF9X6ApjJyhBrI1kA9lTOot8si2kFarboE9JY9mVcFPZvSmMGi7wk/exec', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'

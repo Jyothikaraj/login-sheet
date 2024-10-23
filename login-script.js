@@ -36,7 +36,7 @@ if (name === '' || phoneNumber === '' || email === '') {
   });
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbwrFR5bjrxaOIPWF9X6ApjJyhBrI1kA9lTOot8si2kFarboE9JY9mVcFPZvSmMGi7wk/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbztNT1eVN5VP9gcugdgNPi-2k9YpEoU-4rmLw5GV7sXLNXecgDzN4Qs2jgBR_zWE9Pr/exec', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'

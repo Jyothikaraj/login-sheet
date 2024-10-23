@@ -116,7 +116,7 @@ function displayAllUsers() {
     // Loop through each user and display their information
     users.forEach(user => {
       const listItem = document.createElement('li');
-      listItem.textContent = `Name: ${user.username}, Phone: ${user.phoneNumber}`;
+      listItem.textContent = `Name: ${user.username}, Phone: ${user.phoneNumber}, Email: ${user.email}`;
       usersList.appendChild(listItem);
     });
   }

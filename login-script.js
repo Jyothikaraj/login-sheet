@@ -9,9 +9,11 @@ async function storeUserDetails(event) {
   // Get the form data
   const name = document.getElementById('name').value;
   const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+  const email = document.getElementById('email').value;  // Get the email
+
 
 // Check if both fields are filled before proceeding
-if (name === '' || phoneNumber === '') {
+if (name === '' || phoneNumber === '' || email === '') {
     alert('Please fill in both fields.');
     return; // Stop if fields are not filled
   }
@@ -21,12 +23,16 @@ if (name === '' || phoneNumber === '') {
   const user = {
     name: name,
     phoneNumber: phoneNumber,
+    email: email  // Include email in the submission
+
   };
 
 
   const formData = new URLSearchParams({
     'username': name,
     'phonenumber': phoneNumber
+    'email': email  // Include email in the submission
+
   });
 
   try {

@@ -98,6 +98,8 @@ function displayLastUser() {
       // Update the HTML with the user's details
       document.getElementById('user-username').innerText = `Name: ${lastUser.username}`;
       document.getElementById('user-phoneNumber').innerText = `Phone: ${lastUser.phoneNumber}`;
+      document.getElementById('user-email').innerText = `Email: ${lastUser.email}`;  // Add email display
+
   
       // Show the user details section
       document.getElementById('user-details').style.display = 'block';
